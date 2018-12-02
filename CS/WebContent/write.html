@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+	<meta charset="utf-8">
+	<title>FnF-Write</title>
+	
+<link rel="stylesheet" href="css/bootstrap.css">
+<style type="text/css">
+	.fixed_customer_page { width:650px; margin:0 auto; }
+	.banner { overflow:hidden; margin:80px 0 0 0; } 
+	.banner ul { margin:0 0 0 -8px; padding:0; } 
+	.banner ul li { float:left; margin:0 0 9px 15px; }
+	.banner ul li a:hover img { opacity:0.6; }
+	
+	ul{
+     	list-style:none;
+    }
+
+ 	.title{
+		text-align:center;
+		text-size:20px;
+	} 
+
+	#attached{
+		margin:30px 0 30px 0; 
+		border-color:#d2d2d2;
+		height:120px;
+	}
+	
+	.writer{
+		margin:0 0 0 -30px; padding:0;
+	}
+	
+	.writerbtn{
+		width : 250px; 
+		height : 40px;
+		margin:20px 0 80px 0; 
+		text-align:center;
+	}
+	
+	#qaatitle{
+		text-align:center;
+		margin:30px 0 30px 0; 
+		color:355b8f;
+	}
+</style>
+
+	
+</head>
+
+<body>
+<section>
+<div class="fixed_customer_page">
+
+	<div class="banner">
+	
+		<ul>
+			<li class="xans-record-"><a href="cs.html" alt=" "><img class="banner_image"  src="images/notice.png"></a></li>
+			<li class="xans-record-"><a href="question.html" alt=" "><img class="banner_image"  src="images/question.png"></a></li>
+			<li class="xans-record-"><a href="qaa.html" alt=" "><img class="banner_image"  src="images/qaa.png"></a></li>
+		</ul>
+	</div>
+</div>
+</section>
+
+<hr>
+
+<form role="form"> 
+<div class="container">
+<div class="col-md-12">
+<div class="row">
+<h1 id="qaatitle"><strong>문의하기</strong></h1>
+	<div class="col-sm-offset-1 col-md-9">
+	<div class="form-group writer">
+		<!-- <label class="control-label col-sm-offset-1 col-sm-1 title" for="bda_title">제목</label> -->
+		<div class="col-md-offset-2 col-sm-10">
+			<input class="form-control " id="bda_title" name="bda_title" placeholder="제목을 입력해 주세요." type="text"  autofocus required>
+		</div>
+	</div>
+	
+	<br /><br />
+	
+	<div class="form-group writer">
+		<!-- <label class="control-label col-sm-offset-1 col-sm-1 title" for="bda_content">내용</label> -->
+		<div class="col-md-offset-2 col-sm-10">
+			<textarea class="form-control" id="bda_content" name="bda_content" placeholder="내용을 자세히 입력해 주세요." rows="20" required></textarea>
+		</div>
+	</div>
+	 
+	<div class="form-group writer">	
+		<div class="col-sm-offset-2 col-md-9">
+			<table border="1"  style="color: d2d2d2;" id="attached">
+				<tbody class="">
+					<tr>
+						<th scope="row">
+							<span class="attached_file">첨부파일1      </span>
+						</th>
+						<td><input name="attach_file[]" type="file"></td>
+					</tr>
+					
+					<tr>
+						<th scope="row">
+							<span class="attached_file">첨부파일2      </span>
+						</th>
+			            <td><input name="attach_file[]" type="file"></td>
+			        </tr>
+			
+					</tbody>
+					
+					<tbody>
+						<tr>
+							<th scope="row">
+								<span class="attached_file">비밀번호      </span>
+							</th>
+				            <td><input id="password" name="password" type="password"></td>
+			            </tr>
+		            
+					<tr class="displaynone">
+						<th scope="row">
+							<span class="attached_file">비밀글설정 &nbsp;&nbsp;&nbsp;</span>
+						</th>
+						<td><input id="visible" name="secure" value="F" type="radio" checked="checked" disabled=""><label for="secure0">공개글</label>
+								<input id="nvisible" name="secure" value="T" type="radio"><label for="secure1">비밀글</label></td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<br /><br />
+	
+	<div class="col-sm-offset-3 col-md-9">
+	 <button type="submit" class="btn btn-success writerbtn">문의하기</button> &nbsp;
+	 <button type="button" class="btn btn-info writerbtn"   onclick="location.href='qaa.html' ">돌아가기</button> 
+	 </div>
+	 
+</div>
+</div>
+</div>
+</div>
+ </form>
+
+
+</body>
+</html>

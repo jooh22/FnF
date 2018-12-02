@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FnF-Sign Up</title>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<script src="js/jquery.min.js"></script>
+<style type="text/css">
+
+	body {
+	   padding-top: 50px;
+	   padding-bottom: 40px; 
+	   background-color: #fcfcfc;  /*  바탕색f5f5f5 */
+	}
+
+	#btnregister{
+		width : 444px; height : 49px;
+		text-align:center;
+	}
+	
+	#title {
+		text-align : center;
+	}
+
+	#signupform {
+		text-align : left;
+	}
+	
+	span{
+		color:grey;
+		font-size: small;
+	}
+	
+	#repuire{
+		text-align:right;
+	}
+	
+	.control-label{
+		font-size:15px;
+	}
+	
+	.txt_checkbox{
+		font-size:13px;
+	}
+	
+	#confirm, #confirm1{
+		height : 30px
+	}
+	
+
+</style>
+</head>
+<body>
+
+<section id="aa-memberlogin">
+   <section id="aa-memberlogin">
+      <div class="container"  style="text-align: center;">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="aa-memberlogin-area">
+                  <div class="row">
+                     <div class="col-md-offset-3 col-md-7">
+                        <div class="aa-memberlogin-login">
+                        
+                           <h1 id="title"><strong>일반회원가입</strong></h1>
+							
+                             
+                           <hr width="100%" >
+							
+			                  <form action="/signup" id="signupform" name="signupform" method="post">
+			                  
+			                  <div class="col-md-offset-7 col-sm-6">
+			                  <p id="requireplz"  ><span>*표시는 필수 입력사항입니다.</span></p>
+			                  </div>
+			                  <br /> <br /> 
+			                  
+			                  <label id="signemail" name="signemail" class="col-md-offset-1 col-sm-3  control-label">E-Mail*</label>
+			                  <div class="col-sm-5">
+			                  <input type="text" class="form-control" name="signemail" id="signemail"  placeholder="예) aaa@aaa.aaa"  autofocus required/> 
+   							  </div>
+   							  <div class=col-sm-3>
+   							  	<button type="button"  id="confirm" class="btn btn-success " required>중복확인</button>
+   							  </div>
+			                  <br /> <br /> <br />
+	
+                     			
+                              <label id="signuppswd" name="signuppswd" class="col-md-offset-1 col-sm-3 control-label">비밀번호*</label> 
+                              <div class="col-sm-5">
+                              <input  type="password"  class="form-control"  id="signuppswd" name="signuppswd" placeholder="비밀번호를 입력해 주세요."  required/>
+                              </div>
+                              <br /> <br /> <br />
+                              
+                              <label id="signuppswd1" name="signuppswd1" class="col-md-offset-1 col-sm-3 control-label">비밀번호 확인*</label> 
+                              <div class="col-sm-5">
+                              <input  type="password"  class="form-control"  id="signuppswd1" name="signuppswd1" placeholder="비밀번호를 다시 입력해 주세요."  required/>
+                              </div>
+                              <br /> <br /> <br />
+                              
+                              <label id="signupname" name="signupname" class="col-md-offset-1 col-sm-3 control-label">이름*</label> 
+                              <div class="col-sm-5">
+                              <input  type="text"  class="form-control"  id="signupname" name="signupname" placeholder="예) 김농부"  required/>
+                              </div>
+                              <br /><br /><br />
+                              
+                              <label id="signupnum" name="signupnum" class="col-md-offset-1 col-sm-3 control-label">휴대 전화*</label> 
+                              <div class="col-sm-5">
+                              <input  type="phone number"  class="form-control"  id="signupnum" name="signupnum" placeholder="예) 010-0000-0000"  required/>
+                              </div>
+                              <div class=col-sm-3>
+   							  	<button type="button"  id="confirm1" class="btn btn-success " required>인증받기</button>
+   							  </div>
+                              <br /><br />
+
+                              <hr width="100%">
+                              
+                              <!-- 이용약관 -->
+                              <div class="col-sm-offset-1 col-sm-6 ">
+                              
+								<div class="agreement">
+									<div class="check">
+										<label class="inp_check check_agree label_all_check">
+											<input type="checkbox" name="agree_allcheck">
+											<span class="txt_checkbox">전체동의</span>
+										</label>
+											</div>
+									<div class="check_view">
+										<label class="select_check check_agree">
+											<input type="checkbox" value="" name="agree" required class="styled-checkbox-black">
+											<span class="txt_checkbox">이용약관 <span class="sub">(필수)</span></span>
+										</label>
+									<a href="#none" class="linked" id="usingterms">약관보기 &gt;</a>
+								</div>
+	
+								<div class="check_view">
+									<label class="select_check check_agree">
+										<input type="checkbox" id="private1" name="private1" value="" required>
+										<span class="txt_checkbox">개인정보처리방침 <span class="sub">(필수)</span></span>
+									</label>
+								<a href="#none" class="linked" id="personalterms">약관보기 &gt;</a>
+								</div>
+	
+							<div class="check_view">
+								<label class="select_check check_agree check_fourteen">
+									<input type="checkbox" value="n" name="fourteen_chk" required class="styled-checkbox-black" checked="checked">
+									<span class="txt_checkbox">본인은 만 14세 이상입니다. <span class="sub">(필수)</span></span>
+								</label>
+							</div>
+							
+							<div class="check_view">
+								<label class="select_check check_agree ">
+									<input type="checkbox" name="marketing" class="styled-checkbox-black">
+									<span class="txt_checkbox">이벤트 및 혜택 알림 수신 <span class="sub">(선택)</span></span>
+									</label>
+							</div>
+							
+							</div>
+						</div>
+												                            
+                         <hr width="100%"> <br />
+                              
+                             
+                         <button type="submit"  id="btnregister" class="btn btn-success col-md-offset-2">SIGN UP</button>
+
+               
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+</html>
+
+
+
+

@@ -1,72 +1,41 @@
- #page-wrapper {
-    padding-left: 250px;
-  }
-  
-  #sidebar-wrapper {
-    position: fixed;
-    width: 250px;
-    height: 100%;
-    margin-left: -250px;
-    background: #9dc518;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  #us{
-  	margin-left: auto; 
-  	margin-right: auto; 
-  	display: block;
-  }
-  #page-content-wrapper {
-    width: 100%;
-    padding: 20px;
-  }
-  /* ì‚¬ì´ë“œë°” ìŠ¤íƒ€ì¼ */
-  
-  .sidebar-nav {
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .sidebar-nav li {
-    text-indent: 1.5em;
-    line-height: 2.8em;
-  }
-  
-  .sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .sidebar-nav li a:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-  }
-  
-  .sidebar-nav > .sidebar-brand {
-    font-size: 1.3em;
-    line-height: 3em;
-  }
-  
-  html {
-  position: relative;
-  min-height: 100%;
-}
-.myhr{
-	background-color:#9dc518;
-	height:10px;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #999999;
-}
+   body {
+      padding-top: 50px;
+      padding-bottom: 40px; 
+      background-color: #fcfcfc;  /*  ¹ÙÅÁ»öf5f5f5 */
+   }
+
+   #btnregister{
+      width : 444px; height : 49px;
+      text-align:center;
+   }
+   
+   #title {
+      text-align : center;
+   }
+
+   #signupform {
+      text-align : left;
+   }
+   
+   span{
+      color:grey;
+      font-size: small;
+   }
+   
+   #repuire{
+      text-align:right;
+   }
+   
+   .control-label{
+      font-size:15px;
+   }
+   
+   .txt_checkbox{
+      font-size:13px;
+   }
+   
+   #confirm, #confirm1{
+      height : 30px
+   }
+   
+

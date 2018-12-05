@@ -1,0 +1,18 @@
+aa-header = 헤더
+menu = 메뉴 바(농산물 수산물 있는곳)
+aa-product-category = 상품 정렬 하는 회색 바
+cofirm 정렬하기 버튼
+aa-footer= 풋터
+sd-ss = 사이드바-내용이 포함된 섹션
+wrapper = sd-ss 하위 div
+sidebar-wrapper = wrapper 하위 div(사이드바)
+title = 개인정보 수정 
+signupform = 개인정보 수정 폼 태그
+signemail = e메일란 라벨 태그
+signaddress = 주소란 인풋 태그
+signuppswd = 비밀번호란 라벨,인풋 태그
+signuppswd1 = 비밀번호 확인 라벨 인풋
+signupname = 이름 라벨 인풋
+signupnum = 휴대전화 라벨 인풋
+cofirm1 인증 받기 버튼
+btnregister 수정하기 버튼

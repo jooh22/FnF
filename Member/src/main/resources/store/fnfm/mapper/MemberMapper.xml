@@ -7,8 +7,13 @@
 	</update>
 	<update id="update">
 		UPDATE customer 
+<<<<<<< HEAD
 		SET password = #{password},
 		email=#{email},
+=======
+		SET email = #{email},
+		password = #{password},
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 		user_name = #{user_name},
 		phone = #{phone},
 		question = #{question},

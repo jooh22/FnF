@@ -25,11 +25,19 @@ public class MemberMapperTests {
 		member.setEmail("aaa@bbb.com");
 		member.setPassword("1234");
 		member.setUser_name("최원석");
+<<<<<<< HEAD
 		member.setPhone("010-1234-1234");
 		member.setBirth("19930101");
 		member.setQuestion("피카츄");
 		member.setAnswer("라이츄");
 		member.setStatus(3);
+=======
+		member.setPhone("01012341234");
+		member.setBirth("19930101");
+		member.setQuestion("피카츄");
+		member.setAnswer("라이츄");
+		member.setStatus(1);
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 		mapper.insert(member);
 		log.info(member);
 	}
@@ -47,13 +55,21 @@ public class MemberMapperTests {
 		log.info("DELETE COUNT:" + count);
 		test();
 	}
+<<<<<<< HEAD
 	@Test 
+=======
+	@Test @Ignore
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 	public void testupdate() {
 		MemberVO member = new MemberVO();
 		member.setEmail("bbb@ccc.com");
 		member.setPassword("3456");
 		member.setUser_name("최원석");
+<<<<<<< HEAD
 		member.setPhone("010-2345-6789");
+=======
+		member.setPhone("01023456789");
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 		member.setQuestion("피카츄");
 		member.setAnswer("라이츄");
 		member.setUser_id("aaa");
@@ -61,11 +77,18 @@ public class MemberMapperTests {
 		log.info("UPDATE COUNT:" + count);
 		test();
 	}
+<<<<<<< HEAD
 	@Test @Ignore
+=======
+	@Test
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 	public void testread() {
 		MemberVO member = mapper.read("aaa");
 		log.info(member);
 	}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 }

@@ -19,7 +19,10 @@
 		insert into customer (user_id,email,password,user_name,phone,birth,question,answer,status) 
 		values (#{user_id},#{email},#{password},#{user_name},#{phone},#{birth},#{question},#{answer},#{status})
 	</insert>
+<<<<<<< HEAD
 	<select id="read" resultType="store.fnfm.vo.MemberVO">
 		select * from customer where user_id=#{user_id}
 	</select>
+=======
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 </mapper>

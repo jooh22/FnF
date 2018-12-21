@@ -1,7 +1,10 @@
 package store.fnfm.service;
 
+<<<<<<< HEAD
 import java.util.List;
 
+=======
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
@@ -32,9 +35,12 @@ public class MemberServiceImpl implements MemberService {
 		log.info("get........."+ user_id);
 		return mapper.read(user_id);
 	}
+<<<<<<< HEAD
 	@Override
 	public List<MemberVO> getList(){
 		log.info("getList........");
 		return mapper.getList();
 	}
+=======
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 }

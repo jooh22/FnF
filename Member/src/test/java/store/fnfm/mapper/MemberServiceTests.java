@@ -29,7 +29,11 @@ public class MemberServiceTests {
 		member.setStatus(1);
 		log.info("remove"+service.remove(member));
 	}
+<<<<<<< HEAD
 	@Test @Ignore
+=======
+	@Test
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 	public void testupdate() {
 		MemberVO member = service.get("aaa");
 		if(member == null) {
@@ -38,6 +42,7 @@ public class MemberServiceTests {
 		member.setEmail("ccc@ddd.com");
 		log.info("update"+service.modify(member));
 	}
+<<<<<<< HEAD
 	@Test @Ignore
 	public void testGetList() {
 		service.getList().forEach(member->log.info(member));
@@ -46,5 +51,7 @@ public class MemberServiceTests {
 	public void testGet() {
 		log.info(service.get("aaa"));
 	}
+=======
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 
 }

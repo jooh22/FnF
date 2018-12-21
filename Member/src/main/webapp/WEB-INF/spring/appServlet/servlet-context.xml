@@ -10,7 +10,10 @@
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
+<<<<<<< HEAD
 	<context:component-scan base-package="store.fnfm.controller"></context:component-scan>
+=======
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 	<annotation-driven />
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
@@ -25,4 +28,8 @@
 	
 	
 	
+<<<<<<< HEAD
+=======
+	
+>>>>>>> c125578ac12fcda764209ed76f423feedb11954b
 </beans:beans>

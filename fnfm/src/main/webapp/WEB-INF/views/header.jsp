@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%-- <%HttpSession Session = request.getSession(true);
+String sellerid="김민호";//String sellerid = request.getParameter("id");// id=넘어오는 name값
+Session.setAttribute("sellerid", sellerid);//세션에 저장
+//${sessionScope.sellerid}
+
+String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="id" %> --%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -171,12 +178,6 @@
                   <li><a href="#">수산물</a></li>  
                   <li><a href="#">가공식품</a></li>                 
                 </ul>
-              </li>
-              <li><a href="#">Event</span></a>
-                <!-- <ul class="dropdown-menu">                
-                  <li><a href="#">진행중인 이벤트</a></li>
-                  <li><a href="#">지난 이벤트</a></li>              
-                </ul> -->
               </li>
             </ul>
           </div>

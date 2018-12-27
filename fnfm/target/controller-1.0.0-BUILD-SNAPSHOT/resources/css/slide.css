@@ -39,7 +39,7 @@ html,
   background-size: cover;
   /* Dimensions */
   height: 360px;
-  width: 62%;
+  width: 100%;
   /*max-width: 1280px;*/
   max-width: 100%;
   /* Hide anything that goes beyond the boundaries of the Sequence container */

@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
   <head>
@@ -145,34 +147,39 @@
                   </ul>
                   <div class="tab-content">
 
+
                     <!-- 농산물 -->
                     <div class="tab-pane fade in active" id="men">
                       <ul class="aa-product-catg">
-
-                        <!-- start single product item -->
+                      
+                        <!-- start single product item --> 
+                        <c:foreach items="${productlist}" var="row" >
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/farm/farm.jpg" alt="polo shirt img"></a>
-                            <a class="aa-add-card-btn"href="#"><span class="fa fa-search"></span>View Detail</a> 
+                            <!-- <a class="aa-add-card-btn" href="#"><span class="fa fa-search"></span>View Detail</a>  -->
                           </figure>
                           <figcaption>
-                              <h4 class="aa-product-title"><a href="#">제품 이름</a></h4>
-                              <span class="aa-product-price"><del>￦가격</del></span><span class="aa-product-price">&nbsp;&nbsp;￦할인 가격</span>
+                              <h4 class="aa-product-title"><a href="#">${row.pname}</a></h4>
+                              <span class="aa-product-price"><del>${row.price}</del></span>
                             </figcaption>                                                
-                          <span class="aa-badge aa-sale" href="#">SALE</span>
+                         <!--  <span class="aa-badge aa-sale" href="#">SALE</span> -->
                         </li>
-
-                        <!-- start single product item -->
+						</c:foreach>
+						</ul>
+						</div>
+<!--                         
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/farm/farm3.jpg" alt="polo shirt img"></a>
                             <a class="aa-add-card-btn"href="#"><span class="fa fa-search"></span>View Detail</a>
+                          <span class="aa-product-price"><del>${row.price}</del></span><span class="aa-product-price">&nbsp;&nbsp;￦할인 가격</span>
                           </figure>                         
-                          <!-- product badge -->
+                          
                            <span class="aa-badge aa-sold-out" href="#">Sold Out</span>
                         </li>
 
-                        <!-- start single product item -->
+                        
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/farm/farm.jpg" alt="polo shirt img"></a>
@@ -180,17 +187,16 @@
                           </figure>                          
                         </li>
 
-                        <!-- start single product item -->
+                        
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/farm/farm3.jpg" alt="polo shirt img"></a>
                             <a class="aa-add-card-btn"href="#"><span class="fa fa-search"></span>View Detail</a>
                           </figure>                          
-                          <!-- product badge -->
                           <span class="aa-badge aa-hot" href="#">HOT</span>
                         </li>
 
-                        <!-- start single product item -->
+                        
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/farm/farm.jpg" alt="polo shirt img"></a>
@@ -198,7 +204,7 @@
                           </figure>                          
                         </li>
 
-                        <!-- start single product item -->
+                        
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/farm/farm3.jpg" alt="polo shirt img"></a>
@@ -206,7 +212,7 @@
                           </figure>                          
                         </li>
 
-                        <!-- start single product item -->
+                        
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/farm/farm.jpg" alt="polo shirt img"></a>
@@ -214,7 +220,7 @@
                           </figure>                          
                         </li>
 
-                        <!-- start single product item -->
+                        
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/farm/farm3.jpg" alt="polo shirt img"></a>
@@ -223,7 +229,7 @@
                         </li>                        
                       </ul>
                       <a class="aa-browse-btn" href="productn.html">더 보기 <span class="fa fa-long-arrow-right"></span></a>
-                    </div>
+                    </div> -->
                     <!-- /농산물 -->
                     
                     <!-- 수산물-->

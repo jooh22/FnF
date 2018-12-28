@@ -9,28 +9,28 @@
 		SELECT pname, filename, price
 		FROM product
 		WHERE category = '농산물'
-		ORDER BY idx
+		ORDER BY idx DESC
 	</select>
 	
     <select id="sList" resultType="store.fnfm.vo.ProductVO">
 		SELECT pname, filename,  price
 		FROM product
 		WHERE category = '수산물'
-		ORDER BY idx
+		ORDER BY idx DESC
 	</select>
 	
 	<select id="gList" resultType="store.fnfm.vo.ProductVO">
 		SELECT pname, filename,  price
 		FROM product
 		WHERE category = '가공식품'
-		ORDER BY idx
+		ORDER BY idx DESC
 	</select>
 	
 	<select id="mdList" resultType="store.fnfm.vo.ProductVO">
 		SELECT pname, filename
 		FROM product
 		WHERE recomm = 1
-		ORDER BY idx
+		ORDER BY idx DESC
 	</select>
 	
 	<select id="hList" resultType="store.fnfm.vo.ProductVO">

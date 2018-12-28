@@ -77,7 +77,7 @@
                   <div class="aa-promo-banner">
                   <c:forEach items="${mdlist}" var="row" varStatus="st">
                   <c:if test="${st.count == 1}">                    
-                    <img src="img/mdpick1.jpg" alt="img">                    
+                    <img src="img/${row.filename}" alt="img">                    
                     <div class="aa-prom-content">
                       <!-- <span>75% Off</span> -->
                       <h4><a href="#">${row.pname}</a></h4>                      
@@ -95,7 +95,7 @@
                     <c:if test="${st.count > 1 && st.count < 6}"> 
                   <div class="aa-single-promo-right">
                     <div class="aa-promo-banner">            
-                      <img src="img/mdpick.jpg" alt="img">                      
+                      <img src="img/${row.filename}" alt="img">                      
                       <div class="aa-prom-content">
                         <!-- <span>Exclusive Item</span> -->
                         <h4><a href="#">${row.pname}</a></h4>                        
@@ -104,8 +104,8 @@
                   </div>
                   </c:if>
                    </c:forEach>
-        </div>
-        </div>
+        	</div>
+        	</div>
         </div>
       </div>
     </div>
@@ -134,7 +134,7 @@
                         <c:if test="${st.count <= 8}">
                         <li> 
                           <figure>
-                            <a class="aa-product-img" href="#"><img src="img/farm/farm.jpg" alt="polo shirt img"></a>
+                            <a class="aa-product-img" href="#"><img src="img/${row.filename}"></a>
                             <a class="aa-add-card-btn" href="#"><span class="fa fa-search"></span>View Detail</a>
                           </figure>
                           <figcaption>
@@ -160,7 +160,7 @@
                         <c:if test="${st.count <= 8}">
                         <li>
                           <figure>
-                            <a class="aa-product-img" href="#"><img src="img/farm/farm.jpg" alt="polo shirt img"></a>
+                            <a class="aa-product-img" href="#"><img src="img/${row.filename}"></a>
                             <a class="aa-add-card-btn"href="#"><span class="fa fa-search"></span>View Detail</a>
                           </figure>                         
                           <figcaption>
@@ -183,8 +183,8 @@
                         <c:if test="${st.count <= 8}">
                         <li>
                           <figure>
-                            <a class="aa-product-img" href="#"><img src="img/farm/farm.jpg" alt="polo shirt img"></a>
-                            <a class="aa-add-card-btn"href="#"><span class="fa fa-search"></span>View Detail</a>
+                            <a class="aa-product-img" href="#"><img src="img/${row.filename}"></a>
+                            <a class="aa-add-card-btn" href="#"><span class="fa fa-search"></span>View Detail</a>
                           </figure>                         
                           <figcaption>
                               <h4 class="aa-product-title"><a href="#">${row.pname}</a></h4>
@@ -196,13 +196,15 @@
                         </c:if>
                         </c:forEach>
                         </ul>
-                        </div>               
-                  <!-- 가공식품 -->
-              </div>
-            </div>
+                        </div>           
+                  <!-- /가공식품 -->
+                  
+                  </div>
+				</div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!-- / 메뉴 별 최근게시물 -->
@@ -227,7 +229,7 @@
                     <c:if test="${st.count <= 8}">
                     <li>
                       <figure>
-                        <a class="aa-product-img" href="#"><img src="img/farm/farm.jpg" alt="polo shirt img"></a>
+                        <a class="aa-product-img" href="#"><img src="img/${row.filename}" ></a>
                         <a class="aa-add-card-btn"href="#"><span class="fa fa-search"></span>View Detail</a>
                       </figure>                     
                       <figcaption>

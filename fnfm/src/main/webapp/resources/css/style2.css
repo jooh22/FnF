@@ -824,7 +824,7 @@ img {
   float: left;
   display: inline;
   width: 100%;
-  background-color: #F6F6F6;
+  /* background-color: #F6F6F6; */
 }
 #aa-slider .aa-slider-area {
   display: inline;

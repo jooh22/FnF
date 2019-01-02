@@ -30,6 +30,7 @@
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:product-mapper.xml</value>
+				<value>classpath:searchAll-mapper.xml</value>
 			</list>
 		</property>
 	</bean>

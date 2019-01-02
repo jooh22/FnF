@@ -20,31 +20,26 @@
       <div id="sequence" class="seq">
         <div class="seq-screen">
           <ul class="seq-canvas">
-            <!-- single slide item -->
             <li>
               <div class="seq-model">
                 <img data-seq src="img/slider/slider2.jpg" alt="Men slide img" />
               </div>
             </li>
-            <!-- single slide item -->
             <li>
               <div class="seq-model">
                 <img data-seq src="img/slider/slider1.jpg" alt="Wristwatch slide img" />
               </div>
             </li>
-            <!-- single slide item -->
             <li>
               <div class="seq-model">
                 <img data-seq src="img/slider/slider2.jpg" alt="Women Jeans slide img" />
               </div>
-            </li>
-            <!-- single slide item -->           
+            </li>         
             <li>
               <div class="seq-model">
                 <img data-seq src="img/slider/slider1.jpg" alt="Shoes slide img" />
               </div>
-            </li>
-            <!-- single slide item -->  
+            </li>  
              <li>
               <div class="seq-model">
                 <img data-seq src="img/slider/slider2.jpg" alt="Male Female slide img" />
@@ -52,7 +47,6 @@
             </li>                   
           </ul>
         </div>
-        <!-- slider navigation btn -->
         <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
           <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
           <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a> 
@@ -121,9 +115,9 @@
             <div class="aa-product-area">
               <div class="aa-product-inner">
                  <ul class="nav nav-tabs aa-products-tab">
-                    <li class="active"><a href="#men" data-toggle="tab">농산물</a></li>
-                    <li><a href="#women" data-toggle="tab">수산물</a></li>
-                    <li><a href="#electronics" data-toggle="tab">가공식품</a></li>
+                    <li class="active"><a href="#" data-toggle="tab">농산물</a></li>
+                    <li><a href="#" data-toggle="tab">수산물</a></li>
+                    <li><a href="#" data-toggle="tab">가공식품</a></li>
                   </ul>
                   <div class="tab-content">
 

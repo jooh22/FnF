@@ -13,9 +13,13 @@ String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="i
 <script src="/fnfm/js/jquery.min.js"></script>
 <script>
 		$(function(){
-			$("#btnLogin").bind("click", function(){
+			/* $("#btnLogin").bind("click", function(){
 				location.href = "login.jsp";
-			});
+			}); */
+			
+			$("#btnSearch").bind("click", function() {
+				location.href = "search";
+			})
 		});
 </script>
 <meta charset="UTF-8">
@@ -69,7 +73,7 @@ String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="i
                   <!-- <li class="hidden-xs"><a href="#">마이페이지</a></li> -->
                   <!-- <li class="hidden-xs"><a href="checkout.html">Checkout</a></li> -->
                   <li><a href="#" data-toggle="modal" data-target="#login-modal">마이페이지</a></li>
-                  <li><a href="cart.html" data-toggle="modal" data-target="#login-modal">장바구니</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#login-modal">장바구니</a></li>
                 </ul>
               </div>
             </div>
@@ -79,7 +83,7 @@ String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="i
     </div>
 
     <!-- 로그인 확인창 -->  
-  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!--   <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">                      
         <div class="modal-body">
@@ -95,12 +99,12 @@ String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="i
         </div>                        
       </div>
     </div>
-  </div>  
+  </div>   -->
 
 
 <!-- 로고 -->
   <div class="aa-logo">
-    <a href="index.html"><img src="img/logo2.png" alt="logo img"></a>
+    <a href="/fnfm"><img src="img/logo2.png" alt="logo img"></a>
   </div>
 
 
@@ -114,7 +118,7 @@ String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="i
                 <div class="aa-search-box">
                   <form action="">
                     <input type="text" name="search" id="" placeholder="검색어 입력">
-                    <button type="submit"><span class="fa fa-search"></span></button>
+                    <button type="button" id="btnSearch"><span class="fa fa-search"></span></button>
                   </form>
                 </div>
 

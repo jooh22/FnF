@@ -5,10 +5,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.inject.Inject;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,10 +22,10 @@ import store.fnfm.vo.ProductVO;
 @Controller
 public class HomeController {
 
-	@Inject
+	@Autowired
 	ProductService productService;
 
-	@Inject
+	@Autowired
 	SearchAllService searchAllService;
 	 
 
@@ -51,7 +50,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "search", method = RequestMethod.GET)
-	public ModelAndView search(@RequestParam String keyword) throws Exception{
+	public ModelAndView search(@RequestParam("search") String keyword) throws Exception{
 		List<ProductVO> list = searchAllService.searchAll(keyword);
 		int count = searchAllService.searchAllCount(keyword);
 		ModelAndView mav = new ModelAndView();
@@ -60,6 +59,8 @@ public class HomeController {
 		map.put("count", count);
 		map.put("keyword", keyword);
 		mav.addObject("map", map);
+		/*mav.addObject("searchAll", searchAllService.searchAll(keyword));
+		mav.addObject("searchAllCount", searchAllService.searchAllCount(keyword));*/
 		mav.setViewName("search");
 		return mav;
 	}

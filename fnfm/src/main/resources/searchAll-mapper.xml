@@ -5,22 +5,30 @@
 		
 <mapper namespace="search">
 
-	<select id="searchAll" resultType="store.fnfm.vo.ProductVO">
-		SELECT pname, filename, price,
+	<select id="searchAll" parameterType="String" resultType="store.fnfm.vo.ProductVO">
+		SELECT pname, filename, price
 		FROM product
-		<include refid="search"></include>
+		WHERE sellerid like CONCAT('%',(CONCAT(#{keyword},'%')))
+		OR pname like CONCAT('%',(CONCAT(#{keyword},'%')))
+		<!-- <include refid="search"></include> -->
 		ORDER BY idx DESC
 	</select>
 	
-	<select id="searchAllCount" resultType="store.fnfm.vo.ProductVO">
+	<select id="searchAllCount" parameterType="String" resultType="int">
 		SELECT COUNT(*)
 		FROM product
-		<include refid="search"></include>
+		WHERE sellerid like CONCAT('%',(CONCAT(#{keyword},'%')))
+		OR pname like CONCAT('%',(CONCAT(#{keyword},'%')))
+		<!-- <include refid="search"></include> -->
+		
 	</select>
 	
-	<sql id="search">
-		WHERE sellerid like '%'||#{keyword}||'%'
-		OR pname like '%'||#{keyword}||'%'
-	</sql>
+<!-- 	<sql id="search">
+		WHERE 
+		(
+		sellerid like CONCAT('%',(CONCAT(#{keyword},'%')))
+		OR pname like CONCAT('%',(CONCAT(#{keyword},'%')))
+		)
+	</sql> -->
 	
 </mapper>

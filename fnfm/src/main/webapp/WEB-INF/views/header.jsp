@@ -18,7 +18,10 @@ String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="i
 			}); */
 			
 			$("#btnSearch").bind("click", function() {
-				location.href = "search";
+				if($("#search").val() == "") {
+					return false;
+				}
+				else location.href = "search";
 			})
 		});
 </script>
@@ -104,7 +107,7 @@ String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="i
 
 <!-- 로고 -->
   <div class="aa-logo">
-    <a href="/fnfm"><img src="img/logo2.png" alt="logo img"></a>
+    <a href="/"><img src="img/logo2.png" alt="logo img"></a>
   </div>
 
 
@@ -116,9 +119,9 @@ String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="i
         
               <!-- 검색 창 -->
                 <div class="aa-search-box">
-                  <form action="">
-                    <input type="text" name="search" id="" placeholder="검색어 입력">
-                    <button type="button" id="btnSearch"><span class="fa fa-search"></span></button>
+                  <form action="/fnfm/search" method="get" >
+                    <input type="text" name="search" id="search" placeholder="상품 이름 또는 판매자 아이디 검색">
+                    <button type="submit" id="btnSearch"><span class="fa fa-search"></span></button>
                   </form>
                 </div>
 

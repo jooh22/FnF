@@ -45,60 +45,44 @@
             <div class="row">
               <div class="col-md-3 col-sm-6">
                 <div class="aa-footer-widget">
-                  <h3>Main Menu</h3>
-                  <ul class="aa-footer-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Our Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
+                  <h3>고객센터</h3>
+                  <h3><span class="fa fa-phone"></span>&nbsp;02-0000-0000</h3>
+				  <ul>
+                      <li>평일 오전 09:00 ~ 오후 06:00</li>
+                      <li>토/일요일, 공휴일 휴무</li>
+                   </ul>
                 </div>
               </div>
+              
               <div class="col-md-3 col-sm-6">
                 <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Knowledge Base</h3>
-                    <ul class="aa-footer-nav">
-                      <li><a href="#">Delivery</a></li>
-                      <li><a href="#">Returns</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Discount</a></li>
-                      <li><a href="#">Special Offer</a></li>
-                    </ul>
+                    <h3>About Us</h3>
+                    <ul >
+                      <li>(주)피셔스앤파머스</li>
+                      <li>서울 마포구 월드컵북로 21 (서교동) 풍성빌딩 2,3,4층</li>
+                      <li>사업자 등록번호 : 000-00-00000</li>
+<!--                       대표이사 : 김동환
+서울특별시 마포구 홍익로5안길 28, 3F
+사업자 등록번호 : 107-87-83297 사업자 정보확인 
+통신판매업신고 : 2015-서울마포-0440
+아이디어스는 통신판매중개자이며 통신판매의 당사자가 아닙니다.
+따라서 아이디어스는 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다 -->
+                   </ul>
                   </div>
-                </div>
-              </div>
+              </div> 
+              
               <div class="col-md-3 col-sm-6">
                 <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Useful Links</h3>
-                    <ul class="aa-footer-nav">
-                      <li><a href="#">Site Map</a></li>
-                      <li><a href="#">Search</a></li>
-                      <li><a href="#">Advanced Search</a></li>
-                      <li><a href="#">Suppliers</a></li>
-                      <li><a href="#">FAQ</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Contact Us</h3>
+                <h3>About Us</h3>
                     <address>
-                      <p> 25 Astor Pl, NY 10003, USA</p>
-                      <p><span class="fa fa-phone"></span>+1 212-982-4589</p>
-                      <p><span class="fa fa-envelope"></span>dailyshop@gmail.com</p>
+                      <p><span class="fa fa-envelope"></span>fnfm@example.com</p>
                     </address>
                     <div class="aa-footer-social">
-                      <a href="#"><span class="fa fa-facebook"></span></a>
-                      <a href="#"><span class="fa fa-twitter"></span></a>
-                      <a href="#"><span class="fa fa-google-plus"></span></a>
-                      <a href="#"><span class="fa fa-youtube"></span></a>
+                      <a href=""><span class="fa fa-facebook"></span></a>
+                      <a href=""><span class="fa fa-twitter"></span></a>
+                      <a href=""><span class="fa fa-google-plus"></span></a>
+                      <a href=""><span class="fa fa-youtube"></span></a>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -113,7 +97,7 @@
         <div class="row">
         <div class="col-md-12">
           <div class="aa-footer-bottom-area">
-            <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
+            <p>Designed by <a href="/">Fishers N Farmers</a></p>
             <div class="aa-footer-payment">
               <span class="fa fa-cc-mastercard"></span>
               <span class="fa fa-cc-visa"></span>

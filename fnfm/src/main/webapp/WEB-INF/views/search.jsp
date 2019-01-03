@@ -24,18 +24,19 @@
 					<div class="aa-product-catg-body">
 						<ul class="aa-product-catg">
 							<!-- start single product item -->
-							<c:forEach items="${products }" var="product">
+							<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${map.count}개의 상품이 검색되었습니다.</h4>
+							<br /><br />
+							<c:forEach items="${map.list}" var="row">
 								<li>
 									<figure>
 										<a class="aa-product-img" href="#"><img
-											src='/resources/img/<c:out value="${product.filename}"/>'
-											alt="afasgaw"></a>
+											src='/resources/img/<c:out value="${row.filename}"/>'></a>
 										<figcaption>
 											<h4 class="aa-product-title">
-												<a href="#"><c:out value="${product.pname}" /></a>
+												<a href="#"><c:out value="${row.pname}" /></a>
 											</h4>
 											<span class="aa-product-price"><c:out
-													value="${product.price}" /></span>
+													value="${row.price}" /></span>
 										</figcaption>
 									</figure>
 								</li>
@@ -85,7 +86,7 @@
 						<div class="tag-cloud">
 							<a href='/product/products2?category2=채소'>채소</a> <a
 								href='/product/products2?category2=과일'>과일</a> <a
-								href='/product/products2?category2=쌀,잡곡류'>쌀,잡곡류</a> <a
+								href='/product/products2?category2=쌀,잡곡류'>쌀·잡곡류</a> <a
 								href='/product/products2?category2=견과류'>견과류</a> <a
 								href='/product/products2?category2=생선'>생선</a> <a
 								href='/product/products2?category2=갑각류'>갑각류</a> <a

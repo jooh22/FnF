@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import store.fnfm.vo.ProductVO;
 
-@Repository
+@Repository("productDao")
 public class ProductDAOImpl implements ProductDAO {
 
 	@Inject

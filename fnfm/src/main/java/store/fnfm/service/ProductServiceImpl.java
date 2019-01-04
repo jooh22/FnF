@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import store.fnfm.dao.ProductDAO;
 import store.fnfm.vo.ProductVO;
 
-@Service
+@Service("productService")
 public class ProductServiceImpl implements ProductService {
 
 	@Autowired

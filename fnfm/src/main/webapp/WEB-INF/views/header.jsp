@@ -119,8 +119,8 @@ String id = (String)Session.getAttribute("sellerid");//sellerid세션의 값 ="i
         
               <!-- 검색 창 -->
                 <div class="aa-search-box">
-                  <form action="/fnfm/search" method="get" >
-                    <input type="text" name="search" id="search" placeholder="상품 이름 또는 판매자 아이디 검색">
+                  <form action="search" method="get" >
+                    <input type="text" name="search" id="search" placeholder="상품 또는 판매자 검색">
                     <button type="submit" id="btnSearch"><span class="fa fa-search"></span></button>
                   </form>
                 </div>

@@ -27,7 +27,7 @@
 							<c:forEach items="${products2 }" var="product">
 								<li>
 									<figure>
-										<a class="aa-product-img" href='/sellerPD/<c:out value="${product.idx}"/>'><img
+										<a class="aa-product-img" href='/PD/<c:out value="${product.idx}"/>'><img
 											src='/resources/img/<c:out value="${product.filename}"/>'
 											alt="afasgaw"></a>
 										<figcaption>

@@ -17,7 +17,7 @@
 $(document).ready(function(){	
 	
 	$.ajax({
-		url : "/order/",
+		url : "/order",
 		dataType : "json",
 		method : "POST",
 		success : function(data){
@@ -175,6 +175,8 @@ $(function(){
 </script>
 </head>
 <body>
+<% String user_id = request.getParameter("user_id");%>
+<td>${user_id}</td>
 <jsp:include page="header.jsp"></jsp:include>
 
   <!-- order  -->

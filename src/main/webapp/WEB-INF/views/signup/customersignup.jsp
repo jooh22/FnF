@@ -236,7 +236,7 @@ label {
 	}
 	
 	function birthChk(){
-		var birthreg = /^[1-2]{1}[0-9]{3}[0-1]{1}[0-2]{1}[0-3]{1}[0-9]{1}$/;		 
+		var birthreg = /^[1-2]{1}[0-9]{3}[0-1]{1}[0-9]{1}[0-3]{1}[0-9]{1}$/;		 
 		 if(birthreg.test($("#birth").val()) == true){
 			$("#birthhi").val("true");
 			document.getElementById('birthval').innerHTML = ""

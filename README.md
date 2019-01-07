@@ -1,2 +1,0 @@
-# FnF
-Fishers N Farmers

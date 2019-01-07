@@ -78,7 +78,7 @@
 							<input type="hidden" name="user_id" id="user_id" value="${cart.user_id}" />
 							 <input type="hidden" name="pcode" value="${cart.pcode}" />
 							<tr class="text-center">
-								<td><img class="img-rounded" src="img/${cart.filename}"></td>
+								<td><img class="img-rounded" style="width: 100px; height: 100px;" src="img/${cart.filename}"></td>
 								<td>${cart.pname}</td>
 								<td><fmt:formatNumber value="${cart.price}" pattern="#,###.##" />원</td>
 								<td>${cart.product_count}</td>

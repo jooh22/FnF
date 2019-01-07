@@ -179,7 +179,7 @@
 					<br>
 					
 <!-- 					<input type="hidden" name="sellerid"  id="sellerid" value="김민호"/> -->
-					<input type="hidden" name="sellerid"  id="sellerid" value="${sessionScope.sellerid}"/>
+					<input type="hidden" name="sellerid"  id="sellerid" value="${sessionScope.user_id}"/>
 					<!-- ${sessionScope.sellerid} -->
 					
 					<div class="input-group">

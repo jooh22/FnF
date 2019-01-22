@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="store.fnfm.vo.LoginVO" alias="loginVo"/>
+		<typeAlias type="store.fnfm.vo.AuthVO" alias="authVO"/>
+		<typeAlias type="store.fnfm.vo.CustomerVO" alias="customerVo" />
+	</typeAliases>
+</configuration>
